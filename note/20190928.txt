@@ -1,0 +1,29 @@
+github 最有名气的代码版本管理(Code Version Control)软件
+
+	bin -> binary -> .class
+	src -> source code -> .java
+
+
+import lesson02.SolveMeFirst;
+
+ 低耦合
+ 高内聚
+
+------------------------------------------------------------------------
+国庆期间线下练习：
+	1.计算下列公式并打印结果
+	  a/b+c
+	2.  
+	  a^2+(b%c-d)*e
+	
+	要求:
+		a. 如果需要做计算则创建相应的函数并返回结果，列
+			加法 add(int a, int b)
+			减法 sub(int a, int b)
+			乘法 multiple(int a, int b)
+			除法 divide(int a, int b)
+			取余 mod(int a, int b)
+		a. package名为lession02
+		a. 类名为Practice1，Practice2
+		b. push到个人git中
+		c. 在qq群里@老师说明完成并发送git连接
