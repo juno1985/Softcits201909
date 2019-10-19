@@ -76,19 +76,58 @@ public class DataTypeDemo {
 
 		char c1 = 'a';
 		// 强制类型转换
-		System.out.println((int) c1);
-		
-		System.out.println((char)98);
-
-		System.out.println((int)'c');
-		
+		/*
+		 * System.out.println((int) c1);
+		 * 
+		 * System.out.println((char)98);
+		 * 
+		 * System.out.println((int)'c');
+		 */
 		char c2 = '0';
-		int int3=0;
+	//	int int3=0;
 		
-		System.out.println((int)c2);
+		/*
+		 * System.out.println((int)c2); 
+		 * System.out.println((char)((int)c1+10));
+		 */
+		
+	
+		
+		/*
+		 * if(flag) { System.out.println("flag is true"); } else {
+		 * System.out.println("flag is false"); }
+		 */
+		
+		//System.out.println(1==1);
+		
+		/**
+		 * 判断是否相等 ==
+		 * 判断是否不等 !=
+		 * 判断大于  >
+		 * 判断小于 <
+		 * 判断大于等于 >=
+		 * 判断小于等于 <=
+		 * 或运算 ||
+		 * 与运算 &&
+		 */
+		
+		boolean flag1 = true;
+		boolean flag2 = false;
 		
 		
-		System.out.println((char)((int)c1+10));
+		int int3 = 1;
+		int int4 = 2;
+		
+		if(int3 == int4) {
+			System.out.println("int3 equals to int4");
+		}
+		else if(int3 > int4) {
+			System.out.println("int3 is bigger than int4");
+		}
+		else {
+			System.out.println("int3 is smaller than int4");
+		}
+
 		
 	}
 
