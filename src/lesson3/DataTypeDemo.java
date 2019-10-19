@@ -34,7 +34,7 @@ public class DataTypeDemo {
 		//final 修饰的变量在变量定义后就不能再赋值了
 	//	java.lang.Byte.MAX_VALUE=100;
 		
-		System.out.println(java.lang.Byte.MAX_VALUE);
+		//System.out.println(java.lang.Byte.MAX_VALUE);
 		
 		
 		/*
@@ -45,15 +45,44 @@ public class DataTypeDemo {
 		 * java.lang.Long.MAX_VALUE; java.lang.Long.MIN_VALUE;
 		 */
 		
-		String str1 = "Hello World";
+		String str1 = "Hello World ";
 		
 		String str2 = " konitiwa";
 		
 		String str3 = "abc127ABC*^%%$O))JNB%こにちは你好啊";
 		
+		char c1 = 'a';
 		
-		System.out.println(str1+str2+"               "+str3);
+		int int1 = 1;
 		
+		int int2 = 2147483647;
+		
+		long  long1 =1L;
+		
+		
+		
+	//	System.out.println(java.lang.Integer.MAX_VALUE);
+		
+		System.out.println(int2+long1);
+		
+		System.out.println(int1+int2);
+		
+		/*
+		 * System.out.println(str1+int1+int2);
+		 * 
+		 * System.out.println(int1+int2+str1);
+		 * 
+		 * System.out.println(int1+str1+int2);
+		 */		
+		//类型转换 int->String + String
+		//System.out.println(str1+int1);
+		
+		
+		
+		
+		
+		
+	//	System.out.println((int)c1);
 	}
 	
 
