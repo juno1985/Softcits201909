@@ -130,12 +130,23 @@ public class DataTypeDemo {
 
 		
 		
+		/*
+		 * for( int i = 1; i<=10 ; i++) {
+		 * 
+		 * System.out.println(int3);
+		 * 
+		 * }
+		 */
 		
-		for( int i = 1;   		 i<=10 ; 		 i++) {
-			
-			System.out.println(int3);
-			
-		}
+		int h = 1;
+		
+		System.out.println(h++);  // print 1
+												// ++
+												// h->2
+		
+		System.out.println(++h); //++
+												// h->3
+												// print 3
 		
 		
 	}
