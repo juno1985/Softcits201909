@@ -23,6 +23,11 @@ public class DataTypeDemo {
 		//常量
 		System.out.println(5);
 	
+		short c = 5;
+		//long类型的使用
+		long d = 6666666666666L;
+		
+		
 	}
 	
 
