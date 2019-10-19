@@ -17,8 +17,11 @@ public class DataTypeDemo {
 
 		byte a = -1;
 		byte b = 2;
-		
-		System.out.println((byte)(a+b));
+		//变量
+		a = 1;
+		a = 3;
+		//常量
+		System.out.println(5);
 	
 	}
 	
