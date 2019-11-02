@@ -12,8 +12,15 @@ public class ArrayDemo {
 		 */
 
 		
-		Integer[] a_array = {1,3,5,7,9,2,4,6,8,10};	
+	//	Integer[] a_array = {1,3,5,7,9,2,4,6,8,10};	
 		
+		int[] a_array = new int[10];
+		
+		for(int i=0;
+				i<10;
+				i++) {
+			a_array[i] = i+1;
+		}
 		
 		
 	}
