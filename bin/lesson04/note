@@ -16,3 +16,20 @@ Debug
 
 int 未赋值默认 0
 Integer 未赋值默认 null
+
+x -> scan(System.in);
+
+int[] a_array = new int[x+1];
+
+a_array[0]=1;
+a_array[1]=2;
+
+for(int i=3;i<x+1;i++){
+	a_array[i]=a_arry[i-1]+a_array[i-2];
+}
+
+return a_array[x];
+
+
+
+
