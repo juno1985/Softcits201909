@@ -1,0 +1,16 @@
+byte - java.lang.Byte.MAX_VALUE
+short
+int
+long
+boolean -> if(true/false) else if() ...... else
+char ''
+float
+double
+
+基本类型-8个
+
+String
+
+
+Debug
+
