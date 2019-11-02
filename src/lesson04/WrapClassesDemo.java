@@ -21,26 +21,31 @@ public class WrapClassesDemo {
 		 * double - java.lang.Double
 		 */
 		
-		Byte b = 11;
-		Short s = 12;
-		Integer i = 13;
+		/*
+		 * Byte b = 11; Short s = 12; Integer i = 13;
+		 * 
+		 * Long l = null; Long ll = 0L;
+		 * 
+		 * Boolean bb = true; Character c = 'a'; Float f = null; Double d = null;
+		 * 
+		 * Integer balance = null;
+		 * 
+		 * if(balance == null) { System.out.println("账户未绑定银行卡"); } else {
+		 * System.out.println("您的账户余额为: "); }
+		 */
 		
-		Long l = null;
-		Long ll = 0L;
+		String str = null;
 		
-		Boolean bb = true;
-		Character c = 'a';
-		Float f = null;
-		Double d = null;
+		String str1 = "";
 		
-		Integer balance = null;
+		String str2 = " ";
 		
-		if(balance == null) {
-			System.out.println("账户未绑定银行卡");
-		}
-		else {
-			System.out.println("您的账户余额为: ");
-		}
+		String str3 = "null";
+		
+		System.out.println(str);
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
 		
 	}
 
