@@ -26,3 +26,9 @@ hs_err_pid*
 .classpath
 #.project
 .settings 
+src/lesson3/Integeradd.java
+src/lesson3/Integerpower.java
+src/lesson3/practice01.java
+src/lesson3/practice03.java
+src/lesson3/primenumber.java
+src/lesson3/triangle.java
