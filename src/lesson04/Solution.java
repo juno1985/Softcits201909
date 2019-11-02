@@ -16,7 +16,8 @@ public class Solution {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        
+
+    	Scanner scanner = new Scanner(System.in);
 
         int p = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");

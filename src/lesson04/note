@@ -31,5 +31,15 @@ for(int i=3;i<x+1;i++){
 return a_array[x];
 
 
+N M
+
+for(int i=1;i<=M-1;i++){
+	N *= N;
+}
+
+return N;
+
+
+
 
 
