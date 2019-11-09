@@ -19,3 +19,12 @@ JAVA -> 面向对象编程   Object Oriented Programming = OOP
 		
 关键字null是对引用变量使用的，只是清空引用
 
+关键字this表示本对象
+
+
+https://www.hackerrank.com/challenges/java-inheritance-1/problem
+https://www.hackerrank.com/challenges/java-interface/problem
+https://www.hackerrank.com/challenges/java-inheritance-2/problem
+https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+
+
