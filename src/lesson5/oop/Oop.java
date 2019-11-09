@@ -9,21 +9,53 @@ public class Oop {
 
 	public static void main(String[] args) {
 		
-		String a = "accvc";
 		
+		//h1
+		Human wang = new Human();
 		
-		Human h1 = new Human();
+		wang.setName("Xiao Wang");
+		wang.setGender("male");
+		wang.setAge(30);
+	
+		//h2
+		Human zhang = wang;
+	
+		wang.setAge(40);
+	
+		System.out.println(zhang.getName());
+		System.out.println(zhang.getGender());
+		System.out.println(zhang.getAge());
 		
-		System.out.println(h1.getGender());
+		System.out.println("wang's age: " + wang.getAge());
 		
-		h1.setGender("male");
+		int int1 = 2;
+		int int2 = int1;
+		int1 = 3;
 		
-		System.out.println(h1.getGender());
+		System.out.println(int2);
 		
-		Human h2 = new Human();
+		String str1 = "abc";
+		String str2 = str1;
+		str1 = "def";
 		
-		h2.setGender("female");
+		System.out.println(str2);
 		
+		Integer integer1 = 2;
+		Integer integer2 = integer1;
+		integer1 = 3;
+		
+		System.out.println(integer2);
+		
+		char[] c_array1 = {'a','b','c'};
+		
+		char[] c_array2 = c_array1;
+		//rbc
+		c_array1[0]='r';
+		
+		//abc ? rbc
+		//System.out.println(c_array2);
+		for(int i=0;i<3;i++)
+			System.out.println(c_array1[i]);
 	}
 
 }
