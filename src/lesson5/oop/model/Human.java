@@ -1,7 +1,10 @@
 package lesson5.oop.model;
+
+import lesson5.oop.action.AbstractAction;
+
 // 面向对象的三大特性
 //第一个： 封装
-public class Human {
+public class Human implements AbstractAction{
 	
 	private String name;
 	private String gender;
@@ -25,6 +28,11 @@ public class Human {
 		this.age = age;
 	}
 	
+	
+	@Override
+	public void run() {
+		System.out.println(this.name + " is running");
+	}
 	
 	
 }
