@@ -9,15 +9,16 @@ public class Oop {
 
 	public static void main(String[] args) {
 		
-		Human h1 = new Human();
-		h1.setName("wang");
+		Swimmer swimmer = new Swimmer();
 		
-		Animal a1 = new Animal();
-		a1.setCategory("dog");
-		a1.setName("wang cai");
-	
-		h1.run();
-		a1.run();
+		swimmer.setAge(30);
+		swimmer.setGender("Male");
+		swimmer.setName("Jason");
+		
+		swimmer.run();
+		
+		swimmer.swim();
+		
 	}
 
 }

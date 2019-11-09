@@ -21,6 +21,10 @@ JAVA -> 面向对象编程   Object Oriented Programming = OOP
 
 关键字this表示本对象
 
+面向对象的三大特性OOP:
+	第一个: 封装
+	第二个: 继承
+
 
 https://www.hackerrank.com/challenges/java-inheritance-1/problem
 https://www.hackerrank.com/challenges/java-interface/problem
