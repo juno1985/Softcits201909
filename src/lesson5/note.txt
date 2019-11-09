@@ -1,0 +1,9 @@
+面向过程编程
+
+JAVA -> 面向对象编程   Object Oriented Programming = OOP
+
+
+对象属性的访问级别
+	public -> 可以被一切外部类访问
+	protected -> 可以被相同包下的类访问,如何没有指定关键字默认都是protected
+	private -> 不可被一切外部类访问
