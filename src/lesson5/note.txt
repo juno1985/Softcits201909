@@ -16,3 +16,5 @@ JAVA -> 面向对象编程   Object Oriented Programming = OOP
 		Human
 		数组(即使数组的元素是基本类型)
 		String/Integer... 对基本类型包装的八个包装类型虽然是引用类型但是底层还是基本类型特点
+		
+关键字null是对引用变量使用的，只是清空引用
