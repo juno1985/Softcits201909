@@ -2,7 +2,7 @@ package lesson6;
 
 public class Person {
 
-	private String name;
+	public String name;
 	
 	
 	//如果该类中有带参的构造函数，就必须显式写明无参的构造函数
