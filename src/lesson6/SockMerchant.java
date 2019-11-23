@@ -17,13 +17,14 @@ public class SockMerchant {
     	 * ar
     	 * 10 20 20 10 10 30 50 10 20
     	 */
-    	for(int i=0; i<ar.length; i++) 
-    		color_arr[ ar[i] ] ++;
+   
+    	for(int color : ar)
+    		color_arr[color]++; 
     	
     	int sum = 0;
     	
-    	for(int i=0; i<color_arr.length;i++)
-    		sum += color_arr[i]/2;
+    	for(int num : color_arr)
+    		sum += num/2;
     		
     	return sum;
     }
