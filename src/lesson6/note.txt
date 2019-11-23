@@ -24,6 +24,32 @@ Version 2.0 模板模式
 	抽象类里定义相同的方法和程序流程，子类里实现各自具体的算法。
 	
 	
+
+Fan fan
+https://www.hackerrank.com/challenges/equality-in-a-array/problem
+
+Minor Yuan
+https://www.hackerrank.com/challenges/kangaroo/problem?h_r=profile
+
+Liu Yang
+https://www.hackerrank.com/challenges/apple-and-orange/problem
+
+Major Yuan
+https://www.hackerrank.com/challenges/simple-array-sum/problem
+
+Liu Huan
+https://www.hackerrank.com/challenges/mini-max-sum/problem
+
+OverAll
+https://www.hackerrank.com/challenges/staircase/problem
+
+Clock Problem to be fixed ...
+
+
+
+
+	
+	
 面向对象的三大特性OOP:
 	第一个: 封装
 	第二个: 继承
