@@ -9,6 +9,13 @@ public class Demo {
 		
 		
 		Person p2 = new Person("xiao wang");
+		
+	//	System.out.println( p1 == p2 );	// false ? true ?
+		
+		System.out.println(
+				p1.isEqual(p2)
+				); // true
+	
 	}
 
 }

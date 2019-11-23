@@ -16,5 +16,12 @@ public class Person {
 		this.name = name;
 	}
 	
+	// p1.isEqual(p2)  --> true
+	
+	public boolean isEqual(Person p) {
+		
+	 return this.name	 == p.name;
+		
+	}
 
 }
