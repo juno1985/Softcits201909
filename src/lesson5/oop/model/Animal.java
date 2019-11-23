@@ -18,7 +18,13 @@ public class Animal extends Creature implements AbstractAction{
 	
 	
 	public void run() {
+		
 		System.out.println(this.category + " " + this.getName() + " is running");
+	}
+	@Override
+	public void breath() {
+		System.out.println("用鳃呼吸");
+		
 	}
 	
 

@@ -18,7 +18,8 @@ public class Oop {
 		swimmer.run();
 		
 		swimmer.swim();
-		
+	
+		swimmer.breath();
 	}
 
 }

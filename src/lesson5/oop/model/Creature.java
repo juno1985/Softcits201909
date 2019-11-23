@@ -6,6 +6,8 @@ public abstract class Creature {
 	private String gender;
 	private Integer age;
 	
+	public abstract void breath();
+	
 	public String getName() {
 		return name;
 	}
