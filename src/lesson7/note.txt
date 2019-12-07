@@ -39,7 +39,19 @@ Man继承Person
 	1. 基本类型 则是数据的拷贝 并不会改变该基本类型变量的值 -> 传值
 	2. 引用类型 则是引用传递 会改变该引用变量的值 -> 传址
 	
-	
-	
-	
+Minor Yuan
+https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+---------------------------------------------------------------------------------------------
+Liu Yang
+   //list to array
+   Integer[] arr = new Integer[s.size()];
+   s.toArray(arr);
+https://www.hackerrank.com/challenges/the-birthday-bar/problem
+---------------------------------------------------------------------------------------------
+Major Yuan
+https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
+Liu Huan/Wang Sir
+https://www.hackerrank.com/challenges/non-divisible-subset/problem
+
+
 	
