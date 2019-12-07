@@ -8,9 +8,6 @@ public class Person implements Creature {
 	private String name;
 	
 	public static Integer getNum() {
-		
-		this.getName();
-		
 		return num;
 	}
 	
@@ -30,6 +27,8 @@ public class Person implements Creature {
 	}
 
 	public Integer getId() {
+		Person.getNum();
+		this.getNum();
 		return id;
 	}
 
