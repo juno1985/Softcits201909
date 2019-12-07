@@ -19,8 +19,12 @@ public class EqualizetheArray {
 		for(int i=0;i<arr.length;i++)
 		{
 			//每累加一次就判断最大出现次数是否更新了
-			x[arr[i]-1]++;
-			if(update_max < x[arr[i]-1]) update_max = x[arr[i]-1];
+			/*
+			 * x[arr[i]-1]++;
+				if(update_max < x[arr[i]-1]) 
+					update_max = x[arr[i]-1];
+			 */
+			update_max = Math.max(++x[arr[i]-1],update_max);
 		}
 		
 		return arr.length - update_max;
