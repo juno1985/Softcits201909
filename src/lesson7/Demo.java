@@ -10,6 +10,11 @@ public class Demo {
 		
 		System.out.println(p1.getId());
 		System.out.println(p2.getId());
+		
+		//类.静态方法
+		Person.getNum();
+		//对象.普通方法
+		p1.getId();
 
 	}
 

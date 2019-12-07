@@ -7,6 +7,10 @@ public class Person implements Creature {
 	private Integer id;// 1,2,3....
 	private String name;
 	
+	public static Integer getNum() {
+		return num;
+	}
+	
 	public Person() {
 		this.setId(++num);
 	}
