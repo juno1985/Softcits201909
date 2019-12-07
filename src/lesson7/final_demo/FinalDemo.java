@@ -4,8 +4,8 @@ public class FinalDemo {
 	
 	final String str = "abc";
 	
-	public void changeStr(String a) {
-		this.str = a;
+	public final void changeStr(String a) {
+		System.out.println(a);
 	}
 
 }
