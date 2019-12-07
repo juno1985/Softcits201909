@@ -11,7 +11,7 @@ public final class MySortAndFindUtil {
 	 * O(N*N)
 	 * 
 	 */
-	public static Integer[] mySort(Integer[] arr) {
+	public static void mySort(Integer[] arr) {
 		
 		Integer[] result = new Integer[arr.length];
 		Integer result_index = 0;
@@ -35,7 +35,9 @@ public final class MySortAndFindUtil {
 			min = Integer.MAX_VALUE;
 		}
 		
-		return result;
+		for(int i = 0; i < arr.length; i++)
+			arr[i] = result[i];
+		
 	}
 	
 }

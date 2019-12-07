@@ -8,7 +8,7 @@ public class MySortDemo {
 		
 		Random random = new Random ();
 		
-		Integer[] toBeSortArr = new Integer[100000];
+		Integer[] toBeSortArr = new Integer[10];
 		//初始化一个待排序的数组
 		for(int i = 0; i < toBeSortArr.length; i++)
 			toBeSortArr[i] = random.nextInt(Integer.MAX_VALUE);
@@ -21,7 +21,7 @@ public class MySortDemo {
 		Long start_time = System.currentTimeMillis();
 		
 		//调用排序方法
-		toBeSortArr = MySortAndFindUtil.mySort(toBeSortArr);
+		MySortAndFindUtil.mySort(toBeSortArr);
 		
 		Long end_time = System.currentTimeMillis();
 		
