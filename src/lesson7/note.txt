@@ -10,3 +10,9 @@ static修饰的变量属于类级别，所以所有的对象都共有该变量
 	     修饰方法，该方法属于类级别 
 	     //类.静态方法
 		 Person.getNum();
+	  静态方法只能访问静态变量:
+	  	错误演示：
+	  	private Integer num = 0;
+	  	public static Integer getNum() {
+		return num;}
+	
