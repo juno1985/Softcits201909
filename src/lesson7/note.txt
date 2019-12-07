@@ -16,3 +16,5 @@ static修饰的变量属于类级别，所以所有的对象都共有该变量
 	  	public static Integer getNum() {
 		return num;}
 	
+	静态方法只能访问静态方法，不能访问普通方法：
+	
