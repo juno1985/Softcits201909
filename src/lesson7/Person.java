@@ -1,9 +1,9 @@
 package lesson7;
 
 public class Person implements Creature {
-	//普通初始方法块
-	{
-		System.out.println("初始代码块执行 ... ");
+	//静态初始方法块
+	 {
+		System.out.println("Person 初始代码块执行 ... ");
 	}
 	
 	//static修饰的变量属于类级别，所以所有的对象都共有该变量
@@ -17,7 +17,7 @@ public class Person implements Creature {
 	}
 	
 	public Person() {
-		System.out.println("构造函数执行 ....");
+		System.out.println("Person 构造函数执行 ....");
 		this.setId(++num);
 	}
 

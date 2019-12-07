@@ -4,8 +4,8 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
-		Person p1 = new Person();
-		Person p2 = new Person();
+		Man man1 = new Man();
+		Man man2 = new Man();
 		
 	}
 
