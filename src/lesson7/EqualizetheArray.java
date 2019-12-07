@@ -12,20 +12,16 @@ public class EqualizetheArray {
 
 	// Complete the equalizeArray function below.
 	static int equalizeArray(int[] arr) {
-		int max = 0;
+		int update_max = 0;
 		int[] x = new int[100];
 	
-		//先遍历arr数组然后叠加到x数组中
+	
 		for(int i=0;i<arr.length;i++)
 		{
+			//每累加一次就判断最大出现次数是否更新了
 			x[arr[i]-1]++;
+			if(update_max < x[arr[i]-1]) update_max = x[arr[i]-1];
 		}
-		int update_max = 0;
-		//再遍历一次x数组找到最大值
-		for(int i=0;i<x.length;i++) {
-			if(x[i] > update_max) update_max = x[i];
-		}
-		
 		
 		return arr.length - update_max;
 
