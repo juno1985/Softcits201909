@@ -15,5 +15,18 @@ ArrayList: 扩容机制！！！！！！
 课后练习:
 	1. 完成课上的 lesson8.mylist.ConcreteMyList.remove(Integer)
 	
+	2. Minor Yuan
+	https://www.hackerrank.com/challenges/arrays-ds/problem
 	
+	3. Liu Yang
+	https://www.hackerrank.com/challenges/array-left-rotation/problem
+	
+	4. Liu Huan
+	https://www.hackerrank.com/challenges/day-of-the-programmer/problem
+	
+	5. Major Yuan
+	https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem
+	
+	6. Mr Wang
+	https://www.hackerrank.com/challenges/sparse-arrays/problem
 	
