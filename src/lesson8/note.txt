@@ -9,7 +9,6 @@ ArrayList: 扩容机制！！！！！！
 异常：
 	
 	
-	
 课后练习:
 	1. 完成课上的 lesson8.mylist.ConcreteMyList.remove(Integer)
 	
