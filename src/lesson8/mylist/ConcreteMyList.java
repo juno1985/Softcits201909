@@ -65,4 +65,16 @@ public class ConcreteMyList<E> implements MyListInterface<E> {
 		return newCapacity;
 	}
 
+	/**
+	 * 提示
+	 * 1. 如果index < 0  或者 index > size - 1 抛出异常
+	 * 2. 删除后，所有后面的元素要向前移动
+	 * 
+	 */
+	@Override
+	public E remove(Integer index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

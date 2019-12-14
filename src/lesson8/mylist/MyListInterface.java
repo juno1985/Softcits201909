@@ -16,5 +16,12 @@ public interface MyListInterface<E> {
 	
 	//返回数据长度
 	Integer size();
+	
+	/**
+	 * 删除指定下标元素
+	 * @param index 要删除的指定下标元素
+	 * @return 删除的元素
+	 */
+	E remove(Integer index); 
 
 }

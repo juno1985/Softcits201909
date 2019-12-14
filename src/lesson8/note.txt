@@ -4,3 +4,16 @@
 	3. 构造器一般使用private,即不能创建该方法类的对象
 	
 ArrayList: 扩容机制！！！！！！
+
+
+
+异常：
+	
+	
+
+	
+课后练习:
+	1. 完成课上的 lesson8.mylist.ConcreteMyList.remove(Integer)
+	
+	
+	
