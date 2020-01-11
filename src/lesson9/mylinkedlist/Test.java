@@ -21,7 +21,22 @@ public class Test {
 		myLinkedList.addToLast(mynode6);
 		
 		myLinkedList.traverseFromStart();
+		
+		System.out.println();
+		
+		MyNode<String> mynode7 = new MyNode<String>("gg");
+		
+		myLinkedList.insertAtPosition(2, mynode7);
 
+		myLinkedList.traverseFromStart();
+		
+		System.out.println();
+		
+		MyNode<String> mynode8 = new MyNode<String>("hh");
+		
+		myLinkedList.insertAtPosition(0, mynode8);
+		
+		myLinkedList.traverseFromStart();
 	}
 
 }

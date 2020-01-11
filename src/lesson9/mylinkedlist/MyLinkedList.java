@@ -43,4 +43,40 @@ public class MyLinkedList<E> {
 			node = node.next;
 		}
 	}
+	
+	
+	public void insertAtPosition(int index, MyNode<E> node) {
+		//如果插入位置异常
+		if(index < 0 || index > size) throw new IndexOutOfBoundsException();
+		
+		if(index == 0 ) addFirst(node);
+		else {
+			MyNode<E> succ = getNodeAfterIndex(index);
+			
+			succ.prev.next = node;
+			node.next = succ;
+			node.prev = succ.prev;
+			succ.prev = node;
+			
+			size++;
+		}
+	}
+	//在第一个元素之前插入新的元素
+	public void addFirst(MyNode<E> node) {
+		node.next = first;
+		first.prev = node;
+		first = node;
+		size++;
+	}
+	//找到待插入位置的下一个元素
+	private MyNode<E> getNodeAfterIndex(int index){
+		MyNode<E> node = first;
+		for(int i=0;i<index;i++)
+			node = node.next;
+		return node;
+	}
+	//删除指定位置的元素
+	public void removeAtIndex(int index) {
+		
+	}
 }
