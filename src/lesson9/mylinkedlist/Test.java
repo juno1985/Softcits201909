@@ -37,6 +37,26 @@ public class Test {
 		myLinkedList.insertAtPosition(0, mynode8);
 		
 		myLinkedList.traverseFromStart();
+		
+		System.out.println();
+		
+		MyLinkedList<People> myLinkedList1 = new MyLinkedList<>();
+		People p1 = new People("123213131", 12);
+		People p2 = new People("223faffda", 30);
+		People p3 = new People("123fdafafda", 21);
+		People p4 = new People("123adfafa", 50);
+		
+		MyNode<People> mp1 = new MyNode<People>(p1);
+		MyNode<People> mp2 = new MyNode<People>(p2);
+		MyNode<People> mp3 = new MyNode<People>(p3);
+		MyNode<People> mp4 = new MyNode<People>(p4);
+		
+		myLinkedList1.addToLast(mp1);
+		myLinkedList1.addToLast(mp2);
+		myLinkedList1.addToLast(mp3);
+		myLinkedList1.addToLast(mp4);
+		
+		myLinkedList1.traverseFromStart();
 	}
 
 }
