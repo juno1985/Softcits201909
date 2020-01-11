@@ -15,6 +15,12 @@ public class TwoDimesionsArray {
 		str_arr_2d[0][1] = "bcd";
 		str_arr_2d[0][2] = "def";
 		
+		
+		String[] str1 = str_arr_2d[0];
+		String[] str2 = str_arr_2d[1];
+		
+		
+		
 		int row_num = str_arr_2d.length;
 		
 		int column_num = str_arr_2d[0].length;
