@@ -73,8 +73,21 @@ public class ConcreteMyList<E> implements MyListInterface<E> {
 	 */
 	@Override
 	public E remove(Integer index) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		
+		if(index<0 || index >= size) throw new IndexOutOfBoundsException();
+		
+		else {
+			
+			E e = (E) elementData[index];
+			
+			for(int i = index; i < size - 1; i++) {
+				elementData[i] = elementData[i+1];
+			}
+			
+			return e;
+		}
+		
 	}
 
 }
