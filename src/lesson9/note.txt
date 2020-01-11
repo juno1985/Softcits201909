@@ -9,3 +9,12 @@
 	
 课后练习:
 	1. 完成myLinkedList的删除元素方法removeAtIndex
+	//Minor Yuan
+	https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem
+	https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem?h_r=next-challenge&h_v=zen
+	//Major Yuan
+	https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+	https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+	//Liu Huan
+	https://www.hackerrank.com/challenges/reverse-a-linked-list/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+	https://www.hackerrank.com/challenges/compare-two-linked-lists/problem
