@@ -67,17 +67,17 @@ public class PrintinReverse {
      */
     static void reversePrint(SinglyLinkedListNode head) {
 
-    	List<SinglyLinkedListNode> list = new ArrayList<>();
+    	List<Integer> list = new ArrayList<>();
     	
     	SinglyLinkedListNode node = head;
     	
     	while(node!=null) {
-    		list.add(node);
+    		list.add(node.data);
     		node=node.next;
     	}
     	
     	for(int i=list.size()-1;i>=0;i--)
-    		System.out.println(list.get(i).data);
+    		System.out.println(list.get(i));
 
     }
 
