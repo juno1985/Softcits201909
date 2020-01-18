@@ -8,3 +8,50 @@
 		
 开始自学HTML， https://www.w3school.com.cn/
 			https://www.w3school.com.cn/html/index.asp
+			
+			
+			
+			
+			
+课后练习：
+
+
+https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem
+https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list/problem
+https://www.hackerrank.com/challenges/dynamic-array/problem
+--------------------hint--------------------
+N=2 5
+1 0 5 =》 x=0   y=5
+
+(0^0)%2=0 -> S0[5]
+	     S1[]
+	     lastAnswer=0
+
+1 1 7 => x=1	y=7
+(1^0)%2 = 1
+	    S0[5]
+	    S1[7]
+	    lastAnswer=0
+
+1 0 3 => x=0	y=3
+(0^0)%2=0
+	    S0[5,3]
+	    S1[7]
+	    lastAnswer=0
+
+
+2 1 0 => x=1	y=0
+(1^0)%2 = 1
+	   S0[5,3]
+	   S1[7] (size=1, y%size=> 0%1=0)
+	   lastAnswer=7
+
+2 1 1 => x=1	y=1
+(1^7)%2=0
+	 S0[5,3] (size=2, y%size=> 1%2=1 => S0[1])
+	 S1[7] 
+	   lastAnswer=3	
+--------------------------------------------	
+https://www.hackerrank.com/challenges/balanced-brackets/problem
+https://www.hackerrank.com/challenges/sparse-arrays/problem
+https://www.hackerrank.com/challenges/2d-array/problem
