@@ -5,3 +5,6 @@
 思考问题: 如果排序字符串 "abc" "abe", 如何判断"abc" 小于 "abe"
 	如果要学生成绩排名:
 		学生有属性: 学号，名字，成绩， 那么如何排序？
+		
+开始自学HTML， https://www.w3school.com.cn/
+			https://www.w3school.com.cn/html/index.asp
