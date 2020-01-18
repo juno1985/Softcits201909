@@ -2,9 +2,13 @@ package lesson10;
 
 public class Outer {
 	
+	int a = 1;
 	
-	public class Inner{
+	class Inner{
 		
+		void setA() {
+			a = 2;
+		}
 	}
 
 }

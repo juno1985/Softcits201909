@@ -9,7 +9,11 @@ public class Test {
 		
 		Outer.Inner in = out.new Inner();
 		
-		Outer.Inner in1 = new Outer().new Inner();
+		System.out.println(out.a);
+		
+		in.setA();
+		
+		System.out.println(out.a);
 
 	}
 
