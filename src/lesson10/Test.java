@@ -1,6 +1,8 @@
 package lesson10;
 
 public class Test {
+	
+//	int a = 1;
 
 	public static void main(String[] args) {
 		
@@ -14,6 +16,8 @@ public class Test {
 		in.setA();
 		
 		System.out.println(out.a);
+		
+//		a=2;
 
 	}
 
