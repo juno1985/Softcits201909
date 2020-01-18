@@ -108,5 +108,31 @@ public class MyLinkedList<E> {
 	//删除指定位置的元素
 	public void removeAtIndex(int index) {
 		
+		if(index < 0 || index >= size) throw new ArrayIndexOutOfBoundsException();
+		
+		
+		MyNode<E> node = first;
+		//删除第一个元素
+		if(index==0) {
+			first = node.next;
+			first.prev = null;
+			return;
+		}
+		//删除最后一个元素
+		if(index == size-1) {
+			last = last.prev;
+			last.next = null;
+			return;
+		}
+		
+		//得到要删除位置后一个元素
+		for(int i=1;i<=index;i++) {
+			node = node.next;
+		}
+		
+		node.prev.next = node.next;
+		node.next.prev = node.prev;
+		
+		
 	}
 }
