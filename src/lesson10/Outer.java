@@ -8,6 +8,9 @@ public class Outer {
 	static class Inner{
 		//普通内部类不能有静态变量
 		static int c = 1;
+		
+		int d = 1;
+		
 	//	int b = 1;
 		
 		void setA() {

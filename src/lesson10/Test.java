@@ -6,6 +6,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
+		
 		//内部类对象的生成是通过外部类对象生成的
 		Outer out = new Outer();
 		
