@@ -1,5 +1,9 @@
 package lesson10.mylinkedlist;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -31,6 +35,11 @@ public class Test {
 		myLinkedList1.addToLast(3212341);
 		myLinkedList1.addToLast(111);
 		myLinkedList1.traverseFromStart();
+		
+		//多态 - 编译和运行时是不同的类型
+		List<String> linkList = new LinkedList<>();
+		List<String> arrayList = new ArrayList<>();
+		arrayList.add("ss");
 	}
 
 }
