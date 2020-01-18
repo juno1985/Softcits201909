@@ -125,7 +125,7 @@ public class MyLinkedList<E> {
 			return;
 		}
 		
-		//得到要删除位置后一个元素
+		//得到要删除位置的元素
 		for(int i=1;i<=index;i++) {
 			node = node.next;
 		}
