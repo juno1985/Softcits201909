@@ -65,7 +65,7 @@ public class InsertaNodeattheailofaLinkedList {
     			node = node.next;
     	  }
     	  node.next = new SinglyLinkedListNode(data);
-    	  node.next.data = data;
+    	 // node.next.data = data;
     	}
     	return head;
 
