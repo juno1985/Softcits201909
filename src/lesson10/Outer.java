@@ -5,7 +5,7 @@ public class Outer {
 //	b = 2;	
 	static int a = 1;
 	
-	class Inner{
+	static class Inner{
 		//普通内部类不能有静态变量
 		static int c = 1;
 	//	int b = 1;
