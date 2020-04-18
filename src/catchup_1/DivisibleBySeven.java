@@ -6,7 +6,7 @@ public class DivisibleBySeven {
 		
 		long limit = 9223372036854775807L;
 		
-		long i = 1;
+		long i = 1L;
 		
 		while(i * 7 > 0 && i * 7 <= limit) {
 			System.out.println(i * 7);
