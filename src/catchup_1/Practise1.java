@@ -12,11 +12,19 @@ public class Practise1 {
 		
 		int salary = scan.nextInt();
 		
+		int earning = grossEarning(salary);
+		
+		System.out.println("税后工资: " + earning);
+	
+	}
+	
+	public static int grossEarning(int salary) {
+		
 		salary -= (int) (salary * 0.2);
 		
 		salary += 139;
 		
-		System.out.println(salary);
+		return salary;
 	}
 
 }

@@ -12,7 +12,10 @@ public class Solution {
     static int solveMeFirst(int a, int b) {
       	// Hint: Type return a+b; below 
 
-    	return a + b;
+    	int c = a + b;
+    	
+    	return c;
+    
    }
 
  public static void main(String[] args) {
