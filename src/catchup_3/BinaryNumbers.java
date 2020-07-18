@@ -14,23 +14,11 @@ public class BinaryNumbers {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        scanner.close();
-        
-        
-       String binary = Integer.toBinaryString(n);
-       
-       
-       int t = 0;
-       
-       "101001001101010101010"
-       
-       if(arr[i] == '1') t++;
-       else {
-    	   t=0;
-    	   t > max 
-       }
+    	
+    	int a = 13;
+    	
+  //  	int a = 0x000D;
+    	
+    	System.out.println(a * 2);
     }
 }
