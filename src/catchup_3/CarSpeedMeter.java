@@ -1,3 +1,5 @@
+package catchup_3;
+
 public class CarSpeedMeter extends SpeedMeter
 {
 	public double getRadius()

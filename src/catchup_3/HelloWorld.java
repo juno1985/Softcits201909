@@ -2,7 +2,7 @@ package catchup_3;
 //指令集， 机器指令
 public class HelloWorld {
 	
-	final int a = 1;
+	final int a;
 
 	public void print() {
 		System.out.println("Hello World");
@@ -12,7 +12,7 @@ public class HelloWorld {
 	
 	//无参构造器
 	public HelloWorld() {
-		a = 1;
+		a = 2;
 	}
 
 
