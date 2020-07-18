@@ -31,7 +31,6 @@ public class Solution {
     
     static int getReverse(int t) {
     	String s = "";
-    	4321
     	while(t > 0) {
     		s = s + t%10;
     		t /= 10;
