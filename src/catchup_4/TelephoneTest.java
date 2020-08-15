@@ -8,6 +8,10 @@ public class TelephoneTest {
 			if(phone.getName() == "Android" && phone.getPrice() >=2000 && phone.getPrice() <= 3000) {
 				System.out.println(phone.toString());
 			}
+			
+			phone.getName() == "Android"
+					
+			phone.getName().equals("Android");
 		}
 
 	}
