@@ -30,7 +30,8 @@ public class EnumTest
 			System.out.println(s.toString());
 		}
 		//平常使用枚举实例时，可以通过EnumClass.variable形式来访问
-		new EnumTest().judge(SeasonEnum.SPRING);
+		EnumTest enumTest = new EnumTest();
+		enumTest.judge(SeasonEnum.SPRING);
 		System.out.println();
 		System.out.println(SeasonEnum.SPRING.toString());
 	}
