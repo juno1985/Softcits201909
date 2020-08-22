@@ -10,19 +10,19 @@ import java.util.regex.*;
 
 public class BinaryNumbers {
 
-	static StringBuilder sb = new StringBuilder();
+	
 
 	// 使用迭代的方式将十进制转化二进制
-	static void myToBinaryString(int n) {
+	static String myToBinaryString(int n) {
 
 		int shang = n / 2;
 		int yu = n % 2;
-
+		String s = Integer.toString(yu);
 		if (shang != 0) {
-			myToBinaryString(shang);
+			 s = myToBinaryString(shang) + s;
 		}
 
-		sb.append(Integer.toString(yu));
+		return s;
 
 	}
 
@@ -32,27 +32,25 @@ public class BinaryNumbers {
 		int n = scanner.nextInt();
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 		// integer转化为二进制
-		// String str = Integer.toBinaryString(n);
-		myToBinaryString(n);
+        // String str = Integer.toBinaryString(n);
+        String str = myToBinaryString(n);
 
-		String str = sb.toString();
+        // String转化为char
+        char[] c_arr = str.toCharArray();
 
-		// String转化为char
-		char[] c_arr = str.toCharArray();
+        int max_consecutive = 0;
+        int tmp_consecutive = 0;
+        for (int i = 0; i < c_arr.length; i++) {
+            if (c_arr[i] == '1') {
+                tmp_consecutive++;
+                if (tmp_consecutive > max_consecutive)
+                    max_consecutive = tmp_consecutive;
+            } else {
+                tmp_consecutive = 0;
+            }
+        }
+        System.out.println(max_consecutive);
 
-		int max_consecutive = 0;
-		int tmp_consecutive = 0;
-		for (int i = 0; i < c_arr.length; i++) {
-			if (c_arr[i] == '1') {
-				tmp_consecutive++;
-				if (tmp_consecutive > max_consecutive)
-					max_consecutive = tmp_consecutive;
-			} else {
-				tmp_consecutive = 0;
-			}
-		}
-		System.out.println(max_consecutive);
-
-		scanner.close();
+        scanner.close();
 	}
 }
