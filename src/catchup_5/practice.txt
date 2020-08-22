@@ -1,0 +1,8 @@
+HashMap:
+https://www.hackerrank.com/challenges/permutation-equation/problem
+ArrayList
+https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem
+https://www.hackerrank.com/challenges/grading/problem
+https://www.hackerrank.com/challenges/find-digits/problem
+数组：
+https://www.hackerrank.com/challenges/circular-array-rotation/problem
