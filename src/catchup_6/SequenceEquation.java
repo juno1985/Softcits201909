@@ -1,3 +1,5 @@
+package catchup_6;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -13,7 +15,7 @@ public class SequenceEquation {
 
     	int[] result = new int[p.length];
     	
-    	Map<Integer, Integer> map = new HashMap<>();
+    	Map<Integer, Integer> map = new HashMap<Integer, Integer>();
     	
     	for(int i = 0; i < p.length; i++) {
     		map.put(p[i], i+1);
