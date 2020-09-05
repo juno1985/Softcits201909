@@ -15,22 +15,21 @@ public class JumpingontheClouds {
     // Complete the jumpingOnClouds function below.
     static int jumpingOnClouds(int[] c, int k) {
 
-    	int n = c.length;
-    	
-    	int steps = 0;
-    	int thunderCloud = 0;
-    	//当前所在位置
-    	int steppedPos = 0;
-    	
-    	do {
-    		
-    		steppedPos = (steppedPos + k)%n;
-    		steps++;
-    		if(c[steppedPos] == 1) thunderCloud++;
-    		
-    	}while(steppedPos != 0);//The game ends when Aerith lands back on cloud
-    	
-    	return 100 - steps - 2 * thunderCloud;
+    	int i=0;
+        int j=-1,e=100;
+        for(j=-1;j!=0;i+=k)
+        {
+            j=(i+k)%c.length;
+            if(c[j]!=0)
+            {
+                e-=3;
+            }
+            else{
+                e-=1;
+            }
+            //i+=k;
+        }
+        return e;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
