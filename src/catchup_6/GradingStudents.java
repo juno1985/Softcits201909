@@ -24,10 +24,10 @@ class Result {
 	public static List<Integer> gradingStudents(List<Integer> grades) {
 		// Write your code here
 		for (int i = 0; i < grades.size(); i++) {
-
 			if (grades.get(i) >= 38) {
-				if ((5 - grades.get(i) % 5) < 3) {
-					grades.set(i, (grades.get(i) + (5 - (grades.get(i) % 5))));
+				int nextDiff = 5 - grades.get(i) % 5;
+				if (nextDiff < 3) {
+					grades.set(i, grades.get(i) + nextDiff);
 				}
 			}
 		}
