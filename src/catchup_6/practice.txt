@@ -1,2 +1,10 @@
 1. 完成MyArrayList中的在特定位置添加元素的函数
 2. 给定list中特定位置，返回该元素
+3.
+https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem
+https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list
+https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem
+https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem
+https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem
+https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem
+https://www.hackerrank.com/challenges/reverse-a-linked-list/problem
