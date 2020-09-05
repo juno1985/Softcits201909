@@ -10,7 +10,8 @@ public class MyArrayListTest {
 			myArrayList.add("aa");
 			System.out.println("当前个数 : " + myArrayList.size());
 		}
-
+		
+		
 	}
 
 }
