@@ -8,6 +8,7 @@ public class MyArrayListTest {
 
 		for (int i = 1; i <= 20; i++) {
 			myArrayList.add("aa");
+			System.out.println("当前个数 : " + myArrayList.size());
 		}
 
 	}

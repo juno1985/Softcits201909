@@ -69,5 +69,26 @@ public class MyArrayList<E> {
         return capacity;
     }
 	
+	public int size() {
+		return this.size;
+	}
+	//删除元素
+	public boolean remove(Object o) {
+		int i = 0;
+		if(o == null) {
+			for(; i < this.size; i++) {
+				if(this.elementData[i] == null)
+				break;	
+			}
+		}else {
+			for(; i < this.size; i++) {
+				if(o.equals(this.elementData[i]))break;
+			}
+		}
+		if(i == this.size) return false;
+		System.arraycopy(this.elementData, i + 1, this.elementData, i, this.size - i - 1);
+		this.size--;
+		return true;
+	}
 	
 }
