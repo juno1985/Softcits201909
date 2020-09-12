@@ -94,7 +94,7 @@ public class ShortestReachinaGraph {
 		while (!curPosition.isEmpty()) {
 			steps++;
 			for (Integer pos : curPosition) {
-				visitedSet.add(start);
+				visitedSet.add(pos);
 				List<Integer> list = map_route.get(pos);
 				// if no connected node, terminate
 				if(list == null) continue;
@@ -103,6 +103,7 @@ public class ShortestReachinaGraph {
 					arr_route[nextPos] = steps * 6;
 					//add next poisiton as next start
 					nextPosition.add(nextPos);
+					visitedSet.add(nextPos);
 				}
 				
 			}
