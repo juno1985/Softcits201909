@@ -110,6 +110,7 @@ public class ShortestReachinaGraph {
 			curPosition.clear();
 			curPosition.addAll(nextPosition);
 			nextPosition.clear();
+			
 		}
 		
 		return arr_route;
