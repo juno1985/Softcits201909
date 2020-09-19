@@ -57,9 +57,20 @@ public class InsertaNodeattheTailofaLinkedList {
      */
     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
 
+    	SinglyLinkedListNode node = head;
 
+    	if(node == null) {
+    		head = new SinglyLinkedListNode(data);
+    		return head;
+    	}
+    	
+    	while(node.next != null) {
+    		node = node.next;
+    	}
 
+    	node.next = new SinglyLinkedListNode(data);
 
+    	return head;
     }
     
     
