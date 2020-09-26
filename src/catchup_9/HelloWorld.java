@@ -20,5 +20,7 @@ public class HelloWorld {
 		System.out.println("Hello, World.");
       
 	    // TODO: Write a line of code here that prints the contents of inputString to stdout.
+		
+		System.out.println(inputString);
 	}
 }
