@@ -13,7 +13,8 @@ public class ExceptionsStringtoInteger {
         String S = in.next();
         
         try {
-			System.out.println(Integer.parseInt(S));
+			Integer result = Integer.parseInt(S);
+			System.out.println(result);
 		} catch (Exception e) {
 			System.out.println("Bad String");
 		}
