@@ -20,7 +20,9 @@ class DictionariesandMaps{
       }
       while(in.hasNext()){
           String s = in.next();
-          // Write code here
+          Integer phone = map.get(s);
+          if(phone == null) System.out.println("Not found");
+          else System.out.println(s + "=" + phone);
       }
       in.close();
   }
