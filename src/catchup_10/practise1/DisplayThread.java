@@ -7,8 +7,9 @@ public class DisplayThread extends Thread {
 		
 		for(Integer it : Data.getList()) {
 			System.out.print(it + " ");
+			
 		}
-		
+		System.out.println();
 	}	
 	
 }

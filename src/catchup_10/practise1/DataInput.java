@@ -9,7 +9,11 @@ public class DataInput {
 		
 		while(true) {
 			//主线程负责处理键盘输入
-			num = scan.nextInt();
+			try {
+				num = scan.nextInt();
+			} catch (Exception e) {
+				break;
+			}
 			//子线程sortThread处理数据存储和排序
 			SortThread sortThread = new SortThread(num);
 			sortThread.start();
@@ -18,6 +22,8 @@ public class DataInput {
 			sortThread.join();
 			disPlayThread.start();
 		}
+		
+		scan.close();
 
 	}
 
