@@ -23,11 +23,14 @@ public class JoinThread extends Thread
 		{
 			if (i == 20)
 			{
-				JoinThread jt = new JoinThread("被Join的线程");
-				jt.start();
+				JoinThread jt1 = new JoinThread("被Join的线程1");
+				JoinThread jt2 = new JoinThread("被Join的线程2");
+				jt1.start();
+				jt2.start();
 				// main线程调用了jt线程的join()方法，main线程
 				// 必须等jt执行结束才会向下执行
-				jt.join();
+				jt1.join();
+				jt2.join();
 			}
 			System.out.println(Thread.currentThread().getName()
 				+ "  " + i);
