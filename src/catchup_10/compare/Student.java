@@ -1,6 +1,6 @@
 package catchup_10.compare;
 
-public class Student {
+public class Student implements Comparable<Student>{
 
 	private String name;
 	private Integer score;
@@ -24,6 +24,13 @@ public class Student {
 	}
 	public void setScore(Integer score) {
 		this.score = score;
+	}
+	
+	@Override
+	public int compareTo(Student o) {
+		if(this.getScore() < o.getScore()) return 1;
+		else if(this.getScore() == o.getScore()) return 0;
+		else return -1;
 	}
 	
 	

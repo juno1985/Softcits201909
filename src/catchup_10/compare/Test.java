@@ -23,10 +23,10 @@ public class Test {
 	}
 
 	public static void main(String[] args) {
-		
+		System.out.println("使用外部排序器");
 		useExternalComparator();
-		
-		
+		System.out.println("使用内部排序器");
+		useInternalComparable();
 
 	}
 	//使用外部排序器
@@ -34,6 +34,12 @@ public class Test {
 		StudentComparator sc = new StudentComparator();
 		Collections.sort(list, sc);
 		
+		System.out.println(list);
+	}
+	
+	//使用内部排序器
+	public static void useInternalComparable() {
+		Collections.sort(list);
 		System.out.println(list);
 	}
 
