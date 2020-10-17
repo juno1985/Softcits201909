@@ -2,7 +2,7 @@ package catchup_10;
 
 public class SecondDemo extends Thread {
 	
-	
+	public String s = "init";
 
 	@Override
 	public void run() {
