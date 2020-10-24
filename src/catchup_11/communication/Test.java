@@ -7,9 +7,11 @@ public class Test {
 		Object obj = new Object();
 		
 		ThreadNotify threadNotify = new ThreadNotify(obj, "notify线程");
-		ThreadWait threadWait = new ThreadWait(obj, "wait线程");
+		ThreadWait threadWait1 = new ThreadWait(obj, "wait1线程");
+		ThreadWait threadWait2 = new ThreadWait(obj, "wait2线程");
 		
-		threadWait.start();
+		threadWait1.start();
+		threadWait2.start();
 		threadNotify.start();
 
 	}
