@@ -1,0 +1,11 @@
+手动实现一个MyArrayBlockingQueue
+要求：
+1. 存在一个可以存放消息的队列
+2. 提供take和put方法，take能够通知put线程进行加入新元素，put能够通知take线程取出新的元素
+3. 完成一个能够展示的demo，要求多线程分别take和put新的元素
+	a. 一个主线程
+	b. 一个生产者线程
+	c. 一个消费者线程
+	d. 消息队列类
+	
+提示：synchronize/wait/notifyAll
