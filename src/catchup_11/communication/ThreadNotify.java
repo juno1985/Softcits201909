@@ -4,7 +4,8 @@ public class ThreadNotify extends Thread {
 	
 	Object obj;
 
-	public ThreadNotify(Object obj) {
+	public ThreadNotify(Object obj, String name) {
+		super(name);
 		this.obj = obj;
 	}
 

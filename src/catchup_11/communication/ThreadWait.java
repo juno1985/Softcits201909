@@ -5,7 +5,8 @@ public class ThreadWait extends Thread {
 	Object obj;
 	
 
-	public ThreadWait(Object obj) {
+	public ThreadWait(Object obj, String name) {
+		super(name);
 		this.obj = obj;
 	}
 
