@@ -1,9 +1,12 @@
 package catachup_13;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
 public class MyCallableTest {
@@ -49,8 +52,31 @@ public class MyCallableTest {
 				sum += i;
 			return sum;
 		});
-		
+		//批量向线程池提交任务
+		//创建批量任务
+		List<Callable<Integer>> taskList = new ArrayList<>();
 
+		for(int j = 0; j < 10; j++) {
+			taskList.add(
+					() -> {
+						int sum = 0;
+						for (int i = 1; i <= 10; i++)
+							sum += i;
+						return sum;
+					}
+					);
+		}
+		//创建线程池
+		ExecutorService es1 = Executors.newFixedThreadPool(2);
+		//将批量任务提交到线程池
+		List<Future<Integer>> resultList = es1.invokeAll(taskList);
+		for(Future<Integer> ft : resultList) {
+			//获取线程池中返回的结果
+			System.out.println("获取批量结果: " + ft.get());
+		}
+		//程序结束后关闭线程池
+		es.shutdown();
+		es1.shutdown();
 	}
 
 }
