@@ -1,4 +1,4 @@
-1. FTPClient
+1. FTPC<here is the insert content>lient
 	连接时需要生成socket，并得到inputstream/outputsteam 并用BufferedReader/BufferedWriter进行包装(write后别忘了flush, 之后需要判断 _socket_.isConnected();是否socket是connect状态)
    FTPServer在成功建立后需要向客户端发送 200 New Session established.（我发现socket都是通过javax.net.ServerSocketFactory.createServerSocket(int, int, InetAddress)创建socket的??????）
    FTPClient进行解析，包括状态码和后面的消息
@@ -297,4 +297,3 @@ tomcat获取类加载器步骤1， 从本地缓存map中获取 2.从parent加载
 
 
 tomcat检查session过期的后台线程 org.apache.catalina.session.StandardManager.processExpires()
-added content here!
