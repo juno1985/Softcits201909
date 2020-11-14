@@ -4,7 +4,7 @@ import java.net.*;
 import java.io.*;
 
 public class Client {
-	private static final String HOST = "127.0.0.1";
+	private static final String HOST = "192.168.1.136";
 	public static void main(String[] args) throws IOException {
 		// 链接目的服务器 主机名，端口
 		Socket socket = new Socket(HOST, 2888);
