@@ -1,6 +1,7 @@
 package catchup_14;
 
 import java.io.File;
+import java.io.IOException;
 
 public class FileDemo {
 
@@ -10,6 +11,14 @@ public class FileDemo {
 		System.out.println(System.getProperty("user.dir"));
 		
 		File file = new File("test.txt");
+		
+		if(!file.exists()) {
+			try {
+				file.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 		
 		System.out.println(file.getAbsolutePath());
 		System.out.println(file.getName());
