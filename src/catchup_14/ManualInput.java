@@ -1,5 +1,6 @@
 package catchup_14;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,8 +17,9 @@ public class ManualInput {
 		 * scan.nextLine();
 		 */
 		
-		byte[] buff = new byte[1024];
+		byte[] buff = new byte[8];
 		FileOutputStream fileOutput = null;
+		BufferedOutputStream bufferedOutputStream = null;
 		try {
 			
 			File file = new File("keyboardinput.txt");
@@ -26,7 +28,10 @@ public class ManualInput {
 			
 			//得到文件的输出流
 			fileOutput = new FileOutputStream(file);
-			
+			//包装成BufferedOutputStream
+			bufferedOutputStream = new BufferedOutputStream(fileOutput);
+			//记载累计读了多少字节
+			int size = 0;
 			int count;
 			//ctrl+z 会发出eof 即输入关闭信号，此时count = -1
 			while((count = inputStream.read(buff)) != -1) {
@@ -37,7 +42,16 @@ public class ManualInput {
 				System.out.println("读到键盘输入: " + str);
 				
 				//写入文件
-				fileOutput.write(buff, 0, count);
+				//fileOutput.write(buff, 0, count);
+				
+				size += count;
+				
+				bufferedOutputStream.write(buff, 0, count);
+				// 强行内存和硬盘同步
+				if(size >= buff.length) {
+					size = 0;
+					bufferedOutputStream.flush();
+				}
 			}
 		} catch (IOException e) {
 			
@@ -47,6 +61,7 @@ public class ManualInput {
 				inputStream.close();
 				if(fileOutput != null)
 					fileOutput.close();
+				bufferedOutputStream.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
